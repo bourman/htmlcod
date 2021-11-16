@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Emulator s300</title>
+    
+</head>
+<body>
+    <h1><center><strong>Emulator s300</strong></center></h1>
+    <p><center>רואים שהוא מוכן להפעלה</center></p>
+    <center><img src="https://github.com/bourman/htmlcod/blob/main/S300.png?raw=true" width="500"height="500"/> </center> 
+    <h2><center>:לוחצים</center></h2>
+    <p2><center>4 3 2 1 2 1 4 3<br />ירוק</center></p2>
+    <center><button><img src="https://github.com/bourman/htmlcod/blob/main/Green_button.png?raw=true"width="30" height="30" /> </button></center>
+</body>
+</html>

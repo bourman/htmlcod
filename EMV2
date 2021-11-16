@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1><center><strong>Emulator s300</strong></center></h1>
+    <p><center>רואים שהוא מוכן להפעלה</center></p>
+    <center><img src="https://github.com/bourman/htmlcod/blob/main/S300.png?raw=true" width="500" height="500" /> </center>
+    <h2><center>:לוחצים</center></h2>
+    <p2><center>4 3 2 1 2 1 4 3<br />ירוק</center></p2>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand" ></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number1.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number2.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number3.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number4.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number5.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number6.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number7.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number8.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/number9.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/Red_button.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/numberback.png?raw=true" width="60" height="45" /></button>
+        <button data-number><img src="https://github.com/bourman/htmlcod/blob/main/Green_button.png?raw=true" width="60" height="45" /></button>
+
+
+
+       
+    </div>
+<style>
+    
+
+    .calculator-grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    }
+
+        .calculator-grid > button {
+            cursor: pointer;
+            font-size: 2rem;
+            border: 1px white;
+            outline: none;
+            background-color: rgba(255, 255, 255, .75);
+        }
+
+            .calculator-grid > button:hover {
+                background-color: rgba(255, 255, 255, .8);
+            }
+
+    .span-two {
+        grid-column: span 2;
+    }
+
+    .output {
+        grid-column: 1 / -1;
+        background-color: rgba(0, 0, 0, .75);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+        .output .previous-operand {
+            color: rgba(255, 255, 255, .75);
+            font-size: 1.5rem;
+        }
+
+        .output .current-operand {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+
+
+
+
+
+
+
+</style>
+</html>
